@@ -67,6 +67,26 @@ cacheSolve <- function(x, ...)
         m
 }
 
-
-
-
+## unit tests (commented out - with printed output)
+## m <- makeCacheMatrix(x=matrix(c(4,2,7,6),nrow=2))
+## m$get()
+## [,1] [,2]
+## [1,]    4    7
+## [2,]    2    6
+## m$set(matrix(c(4,7,2,6),nrow=2))
+## m$get()
+## [,1] [,2]
+## [1,]    4    2
+## [2,]    7    6
+## m$getinv()
+## NULL
+## mi <- cacheSolve(m)
+## mi
+## [,1] [,2]
+## [1,]  0.6 -0.2
+## [2,] -0.7  0.4
+## cacheSolve(m)
+## getting cached data
+## [,1] [,2]
+## [1,]  0.6 -0.2
+## [2,] -0.7  0.4
